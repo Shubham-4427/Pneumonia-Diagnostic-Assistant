@@ -1,0 +1,98 @@
+# ─────────────────────────────────────────────────────────────
+#  .gitignore — Chest X-Ray Pneumonia Classifier
+# ─────────────────────────────────────────────────────────────
+
+
+# ── Model Weights ────────────────────────────────────────────
+# Large binary weight files — use Git LFS or share via cloud storage
+*.pth
+*.pt
+*.ckpt
+*.bin
+
+
+# ── Datasets & Images ────────────────────────────────────────
+# Training / validation dataset (thousands of images, very large)
+chest_xray/
+
+# Unseen test images
+unseen/
+
+# Any other common dataset folder names
+data/
+dataset/
+datasets/
+
+# ── Python Cache ─────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+
+# ── Jupyter Notebook Checkpoints ─────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+
+# ── Virtual Environments ─────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+ENV/
+.conda/
+conda-env/
+
+
+# ── Environment Variable Files ───────────────────────────────
+.env
+.env.local
+.env.*
+
+
+# ── macOS Metadata ───────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+
+
+# ── Unit Test Temporary Data ─────────────────────────────────
+# Dummy data and weights created during unit test runs
+tmp_data/
+dummy_weights.pth
+
+
+# ── Logs & Profiling ─────────────────────────────────────────
+logs/
+lightning_logs/
+*.log
+*.csv
+*.tsv
+
+
+# ── Build & Distribution ─────────────────────────────────────
+build/
+dist/
+*.egg-info/
+.eggs/
+
+
+# ── IDE / Editor Files ───────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+
+# ── Misc ─────────────────────────────────────────────────────
+*.zip
+*.tar.gz
+*.gz
